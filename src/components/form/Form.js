@@ -20,7 +20,7 @@ function Form({ todos, setTodos }) {
   const onSubmitHandler = (event) => {
     event.preventDefault(); // from의 기능 중 submit을 하면 자동으로 페이지를 리랜더링하는데 이걸 하면 정보가 다 날아가기 때문에 이를 방지
     setTodos([...todos, inputTodo]);
-    setInputTodo(initialState); // input창을 빈칸으로!
+    setInputTodo(initialState); // input창을 초기값으로 넣어서 빈칸으로 만든다
   };
 
   return (
