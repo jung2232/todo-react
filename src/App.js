@@ -1,8 +1,12 @@
-import React from "react";
-import TodoList from "./pages/TodoList";
+import "./App.css";
+import Router from "./routes/Router";
 
 function App() {
-  return <TodoList />;
+  return (
+    <div className="App">
+      <Router />
+    </div>
+  );
 }
 
 export default App;
